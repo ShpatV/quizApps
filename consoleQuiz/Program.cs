@@ -9,30 +9,33 @@ namespace quizConsole
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Pershendetje nga PolymathQuiz, Ju Lutem Shkruani Emrin Tuaj Per Pjesmarrje Ne Kuiz");
+            string emri = GetValidatedName();
             // Krijoni pyetjet
-            IEnumerable<Question> questions = GenerateQuestions();
+            IEnumerable<Question> questions = GenerateQuestions(); 
 
             // Krijo participantin
             Participant participant = new Participant
             {
                 ParticipantId = 1,
-                Name = "Emri i pjesëmarrësit",
+                Name = emri,
                 Score = 0,
                 TimeTaken = 0
             };
 
-            Console.WriteLine("Quiz fillon! Përgjigju me numrin e opsionit të saktë.");
+            Console.WriteLine($"Pershendetje {participant.Name}! Miresevini Ne Quiz.");
+            Console.WriteLine("Quiz fillon! Përgjigju Me Numrin E Opsionit Të Saktë.");
 
             DateTime startTime = DateTime.Now;
 
             bool isTimeUp = false;
 
-            Thread timeThread = new Thread(() =>
+            Thread timeThread = new Thread(() =>   //loop i pafund qe kontrollon kohen
             {
                 while (true)
                 {
                     TimeSpan elapsed = DateTime.Now - startTime;
-                    if (elapsed.TotalMinutes > 1)
+                    if (elapsed.TotalMinutes > 5)
                     {
                         Console.WriteLine("Keni vonuar mbi 1 minutë në quiz.");
                         isTimeUp = true;
@@ -101,22 +104,22 @@ namespace quizConsole
                 new Question
                 {
                     QuestionId = 1,
-                    QnInWords = "Pyetja 1",
-                    Option1 = "Përgjigja 1",
-                    Option2 = "Përgjigja 2",
-                    Option3 = "Përgjigja 3",
-                    Option4 = "Përgjigja 4",
-                    Answer = 2
+                    QnInWords = "Cila Nga Këto Nuk Eshte Një Sistem Operativ?",
+                    Option1 = "Windows",
+                    Option2 = "Linux",
+                    Option3 = "Android",
+                    Option4 = "Microsoft Office",
+                    Answer = 4
                 },
                 new Question
                 {
                     QuestionId = 2,
-                    QnInWords = "Pyetja 2",
-                    Option1 = "Përgjigja 1",
-                    Option2 = "Përgjigja 2",
-                    Option3 = "Përgjigja 3",
-                    Option4 = "Përgjigja 4",
-                    Answer = 3
+                    QnInWords = "Cili Prej Këtyre Nuk Eshtë Një Tip i Sistemeve Operative?",
+                    Option1 = "DOS",
+                    Option2 = "MacOS",
+                    Option3 = "iOS",
+                    Option4 = "HTML",
+                    Answer = 4
                 }
             };
 
@@ -125,6 +128,7 @@ namespace quizConsole
 
         static int GetUserAnswer()
         {
+           
             int userAnswer = 0;
             bool isValidAnswer = false;
             while (!isValidAnswer)
@@ -132,7 +136,7 @@ namespace quizConsole
                 Console.Write("Përgjigja juaj: ");
                 string answerInput = Console.ReadLine();
 
-                bool isNumeric = int.TryParse(answerInput, out userAnswer);
+                bool isNumeric = int.TryParse(answerInput, out userAnswer); //rezultati ruhet te useranswer
                 try
                 {
                     if (!isNumeric)
@@ -154,7 +158,33 @@ namespace quizConsole
                 }
             }
             return userAnswer;
+
+            
         }
+        static string GetValidatedName()
+            {
+                string name = string.Empty;
+                bool isValidName = false;
+                while (!isValidName)
+                {
+                    Console.Write("Emri juaj: ");
+                    name = Console.ReadLine();
+
+                    if (name.Length < 3)
+                    {
+                        Console.WriteLine("Emri Duhet Të Përmbajë Të Paktën 3 Shkronja.");
+                    }
+                    else if (name.Any(char.IsDigit))
+                    {
+                        Console.WriteLine("Emri Nuk Duhet Të Përmbajë Numra.");
+                    }
+                    else
+                    {
+                        isValidName = true;
+                    }
+                }
+                return name;
+            }
     }
 }
 

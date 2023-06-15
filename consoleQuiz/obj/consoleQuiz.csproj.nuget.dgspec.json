@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shpat\\Desktop\\QuizApps\\quizApps\\consoleQuiz\\consoleQuiz.csproj": {}
+    "C:\\Users\\Shpat\\Desktop\\quizApps\\consoleQuiz\\consoleQuiz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shpat\\Desktop\\QuizApps\\quizApps\\consoleQuiz\\consoleQuiz.csproj": {
+    "C:\\Users\\Shpat\\Desktop\\quizApps\\consoleQuiz\\consoleQuiz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shpat\\Desktop\\QuizApps\\quizApps\\consoleQuiz\\consoleQuiz.csproj",
+        "projectUniqueName": "C:\\Users\\Shpat\\Desktop\\quizApps\\consoleQuiz\\consoleQuiz.csproj",
         "projectName": "consoleQuiz",
-        "projectPath": "C:\\Users\\Shpat\\Desktop\\QuizApps\\quizApps\\consoleQuiz\\consoleQuiz.csproj",
+        "projectPath": "C:\\Users\\Shpat\\Desktop\\quizApps\\consoleQuiz\\consoleQuiz.csproj",
         "packagesPath": "C:\\Users\\Shpat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shpat\\Desktop\\QuizApps\\quizApps\\consoleQuiz\\obj\\",
+        "outputPath": "C:\\Users\\Shpat\\Desktop\\quizApps\\consoleQuiz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shpat\\AppData\\Roaming\\NuGet\\NuGet.Config",

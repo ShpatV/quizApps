@@ -1,0 +1,15 @@
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\bin\Debug\net7.0\consoleQuiz.exe
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\bin\Debug\net7.0\consoleQuiz.deps.json
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\bin\Debug\net7.0\consoleQuiz.runtimeconfig.json
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\bin\Debug\net7.0\consoleQuiz.dll
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\bin\Debug\net7.0\consoleQuiz.pdb
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.csproj.AssemblyReference.cache
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.AssemblyInfoInputs.cache
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.AssemblyInfo.cs
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.csproj.CoreCompileInputs.cache
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.dll
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\refint\consoleQuiz.dll
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.pdb
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\consoleQuiz.genruntimeconfig.cache
+C:\Users\Shpat\Desktop\quizApps\consoleQuiz\obj\Debug\net7.0\ref\consoleQuiz.dll
